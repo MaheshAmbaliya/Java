@@ -1,0 +1,23 @@
+class Shape {
+    public float area(float radius) {
+        return (float) (Math.PI * radius * radius);
+    }
+
+    public float area(float length, float width) {
+        return length * width;
+    }
+
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+
+        float circleRadius = 5.0f;
+        float circleArea = shape.area(circleRadius);
+        System.out.println("Area of Circle: " + circleArea);
+        
+   
+        float rectangleLength = 4.0f;
+        float rectangleWidth = 6.0f;
+        float rectangleArea = shape.area(rectangleLength, rectangleWidth);
+        System.out.println("Area of Rectangle: " + rectangleArea);
+    }
+}
