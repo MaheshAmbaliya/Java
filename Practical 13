@@ -1,0 +1,25 @@
+public class StringMethodsDemo {
+    public static void main(String[] args) {
+        String demoString = "Hello";
+
+char character = demoString.charAt(3);
+    System.out.println("Character at index 3 : " + character);
+
+boolean containsWord = demoString.contains("JAVA");
+    System.out.println("contain 'JAVA' : " + containsWord);
+
+String formattedString = String.format("length of string is : %d ", demoString.length());
+    System.out.println(formattedString);
+
+int length = demoString.length();
+    System.out.println("length of string : " + length);
+
+String[]words = demoString.split("");
+    System.out.println("Words in the string : ");
+
+for (String word : words){
+    System.out.println(word);
+}
+
+    }
+}
