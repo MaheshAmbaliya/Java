@@ -1,0 +1,19 @@
+public class Student{
+
+    public int enrolmentNo ;
+    public String name;
+ 
+    public Student (String name , int enrolmentNo){
+        this.enrolmentNo = enrolmentNo;
+        this.name = name;
+    }
+ public static void main(String[] args) {
+    Student s1 = new Student("Mahesh", 02);
+    Student s2 = new Student("Nilesh", 51);
+    Student s3 = new Student("Karan", 49);
+
+    System.out.println(s1.name);
+    System.out.println(s2.name);
+    System.out.println(s3.name);
+ }
+}
