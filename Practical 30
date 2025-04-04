@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class StudentHashMap {
+    public static void main(String[] args) {
+        HashMap<Integer, String> students = new HashMap<>();
+        
+        students.put(02, "Ambaliya Mahesh");
+        students.put(49, "Parmar Karan");
+        students.put(50, "Parmar Manav");
+        students.put(51, "Parmar Nilesh");
+        students.put(55, "Ram Hardik");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter enrolment number : ");
+        int enrolmentNo = scanner.nextInt();
+
+        String studentName = students.get(enrolmentNo);
+        if (studentName != null) {
+            System.out.println("Student Name : " + studentName);
+        } else {
+            System.out.println("No student found with enrolment number : " + enrolmentNo);
+        }
+
+        scanner.close();
+    }
+}
