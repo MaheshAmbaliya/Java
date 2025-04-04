@@ -1,5 +1,3 @@
-# Car Class Implementation
-
 public class Car {
     private int topSpeed;
     private String name;
