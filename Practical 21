@@ -1,0 +1,12 @@
+final class FinalClass {
+    void display() {
+        System.out.println("This is a final class.");
+    }
+}
+
+class DemoFinalClass {
+    public static void main(String[] args) {
+        FinalClass finalClass = new FinalClass();
+        finalClass.display();
+    }
+}
